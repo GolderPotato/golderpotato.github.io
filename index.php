@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title>GOLDERPOTATO</title>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script type="text/javascript" src="particles.js"></script>
+
+        <script>
+            function openLink(link) {
+                location.href = link;
+            }
+        </script>
+
+        <div id="particles-js"></div>
+        <script>
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 200,
+                        "density": {
+                            "enable": false,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 3
+                        },
+                    },
+                    "opacity": {
+                        "value": 0.6,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                        }
+                    },
+                    "size": {
+                        "value": 5,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": true,
+                        "attract": {
+                            "enable": false,
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": false,
+                        },
+                        "onclick": {
+                            "enable": false,
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+
+        </script>
+
+        <style>
+            #main_text {
+                font-size: 70px;
+                font-family: "Open Sans";
+                font-weight : bolder;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #button {
+                background-color: #ff8000; /* Green */
+                border: none;
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                font-family: "Open Sans";
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+
+            body {
+                margin: 0;
+            }
+
+            canvas {
+                display: block;
+                vertical-align: bottom;
+            }
+
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #ff9900;
+                background-image: url("");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div id="main_text">
+            <p>GOLDERPOTATO</p>
+        </div>
+
+        <button id="button" onclick="openLink('projects.php')">DISCOVER</button>
+    </body>
+</html>
